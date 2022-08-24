@@ -4,11 +4,11 @@ let chalk = require('chalk')
 owner = [
   ['6289618728196'],
   ['6289618728196'],
-  ['6289618728196', 'Ipeh♡, true]
+  ['6289618728196', 'Ipeh♡', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-mods = [] // Want some help?
-prems = [] // Premium user has unlimited limit
+mods = ['6289618728196'] // Want some help?
+prems = ['6289618728196'] // Premium user has unlimited limit
 APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
