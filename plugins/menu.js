@@ -49,13 +49,13 @@ const defaultMenu = {
 ┝❑*Level:* %level
 ┝❑*XP:* %exp
 %readmore`.trimStart(),
-  header: ' *%category*',
-  body: ' • %cmd %islimit %isPremium',
+  header: ' ╭─◩ *%category*',
+  body: ' ╞❑ %cmd %islimit %isPremium',
   footer: '\n',
   after: `*Made by ♡*
 ┝❑*%npmname* | %version
 ┝❑${'```%npmdesc```'}
-╰─────◩
+╰───────────────◩
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
