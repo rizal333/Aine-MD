@@ -23,6 +23,7 @@ let handler = async (m, { conn, text, isOwner, groupMetadata }) => {
 
 handler.command = /^join$/i
 handler.premium = true
+handler.owner = true
 
 module.exports = handler
 
