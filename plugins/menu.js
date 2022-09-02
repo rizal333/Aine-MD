@@ -35,22 +35,28 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭────◩ *『Hai, %ucapan %name!👋🗿』*
-│  
-┝❑ *Waktu:*
-┝❑ _%wib WIB_
-┝❑ _%wita WITA_
-┝❑ _%wit WIT_
-┝❑ *Hari:* _%week_
-┝❑ *Tanggal:* _%date_
-┝❑ *Uptime:* _%uptime_ (%muptime)
-┝─────◩
-┝❑ *Limit:* _%limit_
-┝❑ *Level:* _%level_
-┝❑ *XP:* _%exp_
+ *Hai, %ucapan %name!👋🏻*
+  
+╭─◩   *『 INFO & WAKTU 』*
+┝⫹⫺ *Author:* © NR-Rfky28
+┝⫹⫺ *Version:* %version
+┝⫹⫺ _%wib WIB_
+┝⫹⫺ _%wita WITA_
+┝⫹⫺ _%wit WIT_
+┝⫹⫺ *Day:* _%week_
+┝⫹⫺ *Tanggal:* _%date_
+┝⫹⫺ *Uptime:* _%uptime_ (%muptime)
+◩
+
+╭─◩     *『 USER 』*
+┝⌦ *Nama:* %name
+┝⌦ *Limit:* _%limit_
+┝⌦ *Level:* _%level_
+┝⌦  *XP:* _%exp_
+◩
 %readmore`.trimStart(),
-  header: ' ╭────◩ *〖%category〗*',
-  body: ' ╞❍➢ _%cmd_ ࿐ %islimit %isPremium',
+  header: '╭────◩ *〖 %category 〗*',
+  body: ' ╞۝ _%cmd_  %islimit %isPremium',
   footer: '╰─────────◩\n',
   after: `*Made by ♡*
 ┝❑ *%npmname* | _%version_
@@ -224,19 +230,19 @@ function clockString(ms) {
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi kak🌚'
+        var ucapanWaktu = 'Pagi kak'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi kak🌛'
+          ucapanWaktu = 'Pagi kak'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang kak🌞'
+          ucapanWaktu = 'Siang kak'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore kak🌞'
+          ucapanWaktu = 'Sore kak'
         } else if (hour_now >= '17' && hour_now <= '18') {
           ucapanWaktu = 'Selamat Petang'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam kak🌝'
+          ucapanWaktu = 'Malam kak'
         } else {
-          ucapanWaktu = 'Selamat Malam!🌙'
+          ucapanWaktu = 'Selamat Malam!'
         }	
         return ucapanWaktu
 }
