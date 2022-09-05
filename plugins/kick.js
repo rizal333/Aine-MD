@@ -4,9 +4,9 @@ let handler = async (m, { conn, args }) => {
   for (let user of users) if (user.endsWith('@s.whatsapp.net')) await conn.groupParticipantsUpdate(m.chat, [user], "remove")
 }
 handler.help = ['kick'].map(v => v + ' @user')
-handler.tags = ['admin']
+handler.tags = ['admin','owner']
 handler.command = /^(kick)$/i
-handler.owner = true
+handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = true
@@ -14,6 +14,7 @@ handler.private = false
 
 handler.admin = true
 handler.botAdmin = true
+handler.owner = true
 
 handler.fail = null
 handler.limit = true
