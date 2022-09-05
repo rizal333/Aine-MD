@@ -8,7 +8,7 @@ owner = [
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 mods = ['6289618728196'] // Want some help?
-prems = ['6289618728196'] // Premium user has unlimited limit
+prems = ['6289618728196', true] // Premium user has unlimited limit
 APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -40,7 +40,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@ipeh_kyy28'
+  var sticker_name = 'ipeh_kyy28'
   var sticker_author = 'IkyAsu'
 } else {
   var sticker_name = stickerpack.spackname
