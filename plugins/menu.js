@@ -49,11 +49,13 @@ const defaultMenu = {
 ◩
 
 ╭─◩     *『 USER 』*
-┝⌦ *Nama:* %name
-┝⌦ *Limit:* _%limit_
-┝⌦ *Level:* _%level_
-┝⌦  *XP:* _%exp_
+┝➢ *Nama:* %name
+┝➢ *Limit:* _%limit_
+┝➢ *Level:* _%level_
+┝➢ *XP:* _%exp_
+┝➢ *Role:* _%role_
 ◩
+
 %readmore`.trimStart(),
   header: '╭────◩ *〖 %category 〗*',
   body: ' ╞۝ _%cmd_  %islimit %isPremium',
