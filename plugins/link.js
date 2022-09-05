@@ -34,7 +34,7 @@ handler.help = ['link']
 handler.tags = ['group']
 handler.command = /^link(g(c|ro?up))?$/i
 handler.group = true
-handler.admin = true
+handler.admin.owner = true
 
 module.exports = handler
 
