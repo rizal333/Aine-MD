@@ -70,7 +70,7 @@ handler.tags = ['sticker']
 handler.command = /^(wm|take)$/i
 
 handler.limit = true
-handler.owner.premium = true
+handler.owner = true
 
 module.exports = handler
 
