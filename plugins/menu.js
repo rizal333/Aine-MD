@@ -46,15 +46,17 @@ const defaultMenu = {
 ┝⫹⫺ *Day:* _%week_
 ┝⫹⫺ *Tanggal:* _%date_
 ┝⫹⫺ *Uptime:* _%uptime_ (%muptime)
-◩
+╰─────◩
 
 ╭─◩     *『 USER 』*
-┝➢ *Nama:* %name
-┝➢ *Limit:* _%limit_
-┝➢ *Level:* _%level_
-┝➢ *XP:* _%exp_
-┝➢ *Role:* _%role_
-◩
+┝➢ *💌Nama:* %name
+┝➢ *💳Limit:* _%limit_
+┝➢ *💶Dompet:* _%money_
+┝➢ *🗂️Level:* _%level_
+┝➢ *🏧Tabungan:* _%atm_
+┝➢ *💾XP:* _%exp_
+┝➢ *⚒️Role:* _%role_
+╰─────◩
 
 %readmore`.trimStart(),
   header: '╭────◩ *〖 %category 〗*',
