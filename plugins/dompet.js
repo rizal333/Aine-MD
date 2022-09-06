@@ -3,7 +3,7 @@ let handler = async (m) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
-    m.reply(`${global.db.data.users[who].money} Your money`)
+    m.reply(`*Nama:* %name\n*Your Money:* ${global.db.data.users[who].money}\n*Tabungan:* %atm`)
 }
 handler.help = ['dompet [@user]']
 handler.tags = ['xp']
