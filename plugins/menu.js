@@ -51,9 +51,9 @@ const defaultMenu = {
 ╭─◩     *『  USER  』*
 ┝➢ *💌 Nama:* %name
 ┝➢ *💳 Limit:* _%limit_
-┝➢ *💶 Dompet:* _${money}
+┝➢ *💶 Dompet:* _%dompet_
 ┝➢ *🗂️ Level:* _%level_
-┝➢ *🏧 Tabungan:* _${bank}
+┝➢ *🏧 Tabungan:* _%bank_
 ┝➢ *💾 XP:* _%exp
 ┝➢ *⚒️ Role:* _%role_
 ╰─────◩
