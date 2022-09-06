@@ -3,7 +3,7 @@ let handler = async (m) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
-    m.reply(`*💌 Name:* ${name}\n*💳 Limit Tersisa:*${global.db.data.users[who].limit}\n*💾 Level kamu:* ${level} `)
+    m.reply(`*💳 Limit Tersisa:*${global.db.data.users[who].limit}`)
 }
 handler.help = ['limit [@user]']
 handler.tags = ['xp']
