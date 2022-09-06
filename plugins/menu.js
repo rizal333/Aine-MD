@@ -45,15 +45,13 @@ const defaultMenu = {
 ┝⫹⫺ _🕰️ %wit WIT_
 ┝⫹⫺ *🗓️ Day:* _%week_
 ┝⫹⫺ *📅 Tanggal:* _%date_
-┝⫹⫺ *⌚ Uptime:* _%uptime_ ```(%muptime)```
+┝⫹⫺ *⌚ Uptime:* _%uptime_ (%muptime)
 ╰─────◩
 
 ╭─◩     *『  USER  』*
 ┝➢ *💌 Nama:* %name
 ┝➢ *💳 Limit:* _%limit_
-┝➢ *💶 Dompet:* _%dompet_
 ┝➢ *🗂️ Level:* _%level_
-┝➢ *🏧 Tabungan:* _%bank_
 ┝➢ *💾 XP:* _%exp
 ┝➢ *⚒️ Role:* _%role_
 ╰─────◩
