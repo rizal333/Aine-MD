@@ -3,7 +3,7 @@ let handler = async (m, { text }) => {
   user.afk = + new Date
   user.afkReason = text
   m.reply(`
-${conn.getName(m.sender)} 〖 is now AFK 〗\n\n*📝 Alasan:*${text ? ': ' + text : ''}\\ ⫹⫺ © NR-Rifky28
+${conn.getName(m.sender)} 〖 is now AFK 〗\n\n*📝 Alasan:*${text ? ': ' + text : ''}\n\n ⫹⫺ © NR-Rifky28\n© Nrkhlifah 22
 `)
 }
 handler.help = ['afk [alasan]']
