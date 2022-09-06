@@ -37,25 +37,25 @@ const defaultMenu = {
   before: `
  *Hai, %ucapan %name!👋🏻*
   
-╭─◩   *『 INFO & WAKTU 』*
-┝⫹⫺ *Author:* © NR-Rfky28
-┝⫹⫺ *Version:* %version
-┝⫹⫺ _%wib WIB_
-┝⫹⫺ _%wita WITA_
-┝⫹⫺ _%wit WIT_
-┝⫹⫺ *Day:* _%week_
-┝⫹⫺ *Tanggal:* _%date_
-┝⫹⫺ *Uptime:* _%uptime_ (%muptime)
+╭─◩   *『  INFO & WAKTU  』*
+┝⫹⫺ *🎓 Author:* © NR-Rfky28
+┝⫹⫺ *📩 Version:* %version
+┝⫹⫺ _🕰️ %wib WIB_
+┝⫹⫺ _🕰️ %wita WITA_
+┝⫹⫺ _🕰️ %wit WIT_
+┝⫹⫺ *🗓️ Day:* _%week_
+┝⫹⫺ *📅 Tanggal:* _%date_
+┝⫹⫺ *⌚ Uptime:* _%uptime_ ```(%muptime)```
 ╰─────◩
 
-╭─◩     *『 USER 』*
-┝➢ *💌Nama:* %name
-┝➢ *💳Limit:* _%limit_
-┝➢ *💶Dompet:* _%money_
-┝➢ *🗂️Level:* _%level_
-┝➢ *🏧Tabungan:* _%atm_
-┝➢ *💾XP:* _%exp_
-┝➢ *⚒️Role:* _%role_
+╭─◩     *『  USER  』*
+┝➢ *💌 Nama:* %name
+┝➢ *💳 Limit:* _%limit_
+┝➢ *💶 Dompet:* _${money}
+┝➢ *🗂️ Level:* _%level_
+┝➢ *🏧 Tabungan:* _${bank}
+┝➢ *💾 XP:* _%exp
+┝➢ *⚒️ Role:* _%role_
 ╰─────◩
 
 %readmore`.trimStart(),
@@ -63,8 +63,8 @@ const defaultMenu = {
   body: ' ╞۝ _%cmd_  %islimit %isPremium',
   footer: '╰─────────◩\n',
   after: `*Made by ♡*
-┝❑ *%npmname* | _%version_
-┝❑${'```%npmdesc```'}
+┝⫹⫺ *%npmname* | _%version_
+┝⫹⫺${'```%npmdesc```'}
 ╰────────────◩
 `,
 }
