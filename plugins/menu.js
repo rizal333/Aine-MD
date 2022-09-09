@@ -172,12 +172,12 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
    // conn.sendButton(m.chat, text.trim(), 'Made with ♡ by NoerKiyy', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
-   conn.sendHydrated(m.chat, text.trim(), 'Made with ♡ by Kholifah', null, 'https://instagram.com/nrkhlifah28', 'instagram', '', '', [
+   conn.sendHydrated(m.chat, text.trim(), 'Made with ♡ by Kholifah\n\n*Note:* Kalo ada yang error lapor ke *owner*', null, 'https://instagram.com/nrkhlifah28', 'instagram', '', '', [
       ['Speed', '/speed'],
       ['Donasi', '/donasi'],
       ['Owner', '/owner']
     ], m)
-    let url = `https://telegra.ph/file/814690a6ddf535456e5d7.jpg`.trim()
+    /*let url = `https://telegra.ph/file/814690a6ddf535456e5d7.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
     let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -195,13 +195,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi',
-                                    id: '/donasi'
+                                    displayText: Speed',
+                                    id: '/speed'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Sewa',
-                                    id: '/sewa'
+                                    displayText: 'Donasi',
+                                    id: '/donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
