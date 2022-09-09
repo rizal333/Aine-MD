@@ -172,7 +172,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
    // conn.sendButton(m.chat, text.trim(), 'Made with ♡ by NoerKiyy', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
-   conn.sendHydrated(m.chat, text.trim(), 'Made with ♡ by Kholifah\n© LuvvU><', null, 'https://instagram.com/nrkhlifah28', 'instagram', '', '', [
+   conn.sendHydrated(m.chat, text.trim(), 'Made with ♡ by Kholifah\n© LuvvU><', null, 'https://instagram.com/nrkhlifah28', 'instagram', 'https://github.com/nrkhlifah28', 'My Github', [
       ['Speed', '/speed'],
       ['Donasi', '/donasi'],
       ['Owner', '/owner']
