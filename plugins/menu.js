@@ -48,7 +48,7 @@ const defaultMenu = {
 ┝⫹⫺ _⏰ %wib WIB_
 ┝⫹⫺ _⏰ %wita WITA_
 ┝⫹⫺ _⏰ %wit WIT_
-┝⫹⫺ *🗓️ Day:* _%week_
+┝⫹⫺ *🗓️ Day:* _%week_ _%weton_
 ┝⫹⫺ *📅 Tanggal:* _%date_
 ┝⫹⫺ *⏱️ Uptime:* _%uptime_ (%muptime)
 ╰─────◩
@@ -172,7 +172,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
    // conn.sendButton(m.chat, text.trim(), 'Made with ♡ by NoerKiyy', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
-   conn.sendHydrated(m.chat, text.trim(), 'Made with ♡ by Kholifah\n\n*Note:* Kalo ada yang error lapor ke *owner*', null, 'https://instagram.com/nrkhlifah28', 'instagram', '', '', [
+   conn.sendHydrated(m.chat, text.trim(), 'Made with ♡ by Kholifah\n© LuvvU><', null, 'https://instagram.com/nrkhlifah28', 'instagram', '', '', [
       ['Speed', '/speed'],
       ['Donasi', '/donasi'],
       ['Owner', '/owner']
